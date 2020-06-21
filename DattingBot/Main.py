@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import Helper
 import telebot
-from telebot import apihelper
+#from telebot import apihelper
 from telebot import types
 import sqlite3
 import sql
@@ -103,8 +103,8 @@ def Main():
     botpolling()
     
 def botpolling():
-    PROXY = '8XLgrh:a4szaK@213.166.74.250:9788' #(Логин и пароль от купленного прокси)
-    apihelper.proxy = {'https':'https://' + PROXY}  
+    #PROXY = '8XLgrh:a4szaK@213.166.74.250:9788' #(Логин и пароль от купленного прокси)
+    #apihelper.proxy = {'https':'https://' + PROXY}  
     while(True):
         try:
             bot.polling(none_stop = True,timeout=300)

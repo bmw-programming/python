@@ -11,7 +11,7 @@ import time
 import Names
 
 
-bot = telebot.TeleBot("1082552377:AAGGwJKQ9llMm7x4kmCLxaIVw0TnAyJ13eM")
+bot = telebot.TeleBot("")
 @bot.message_handler(commands=['start'])
 def start(message):
     sql1 = sql.sql()
